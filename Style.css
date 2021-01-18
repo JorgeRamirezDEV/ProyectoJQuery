@@ -40,6 +40,8 @@ body {
     margin: 0;
 }
 
+/* Estilo de navbar */
+
 .navbar { 
     display: flex;
     background-color: darkgreen;
@@ -61,6 +63,24 @@ body {
     margin: 10px 0px;
 }
 
+.navbar input {
+    margin-left: auto;
+    margin-right: 20px;
+    order: 2;
+
+}
+
+/* Div del producto */
+
+.productos {
+    text-align: center;
+    padding-bottom: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Div del medio */
 
 .middle { 
     display: grid;
@@ -87,6 +107,8 @@ body {
 
 }
 
+
+
 .topbanner {
     display: flex;
     align-items: center;
@@ -111,7 +133,7 @@ body {
 #diapositiva { 
     display: flex;
     justify-content: center;
-    margin-bottom: 350px ;
+    margin-bottom: 330px ;
 
 }
     
