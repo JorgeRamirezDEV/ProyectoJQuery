@@ -1,3 +1,3 @@
 # ProyectoJQuery
 
-https://jorgeramirezdev.github.io/ProyectoJQuery/index.html
+https://jorgeramirezdev.github.io/ProyectoJQuery
