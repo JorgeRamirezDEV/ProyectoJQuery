@@ -42,7 +42,7 @@ $(function () {
 
 $("input#nombre").keydown(function(){
 
-  if(/^[a-zA-Z]*$/.test($(this).val()) && $(this).val() !== ""){
+  if(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/.test($(this).val()) && $(this).val() !== ""){
       console.log("funciona");
       $(this).css("border", "2px solid green");
       $("input#apellido").prop("disabled", false);
@@ -56,7 +56,7 @@ $("input#nombre").keydown(function(){
 
 $("input#apellido").keydown(function(){
 
-  if(/^[a-zA-Z]*$/.test($(this).val()) && $(this).val() !== ""){
+  if(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/.test($(this).val()) && $(this).val() !== ""){
       $(this).css("border", "2px solid green");
       $("input#email").prop("disabled", false);
   }else{
@@ -81,7 +81,7 @@ $("input#email").keydown(function(){
 
 $("input#pais").keydown(function(){
 
-  if(/^[a-zA-Z]*$/.test($(this).val()) && $(this).val() !== ""){
+  if(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/.test($(this).val()) && $(this).val() !== ""){
       $(this).css("border", "2px solid green");
       $("input#edad").prop("disabled", false);
   }else{
