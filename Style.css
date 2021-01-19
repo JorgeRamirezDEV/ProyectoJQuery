@@ -69,52 +69,6 @@ body {
 
 }
 
-/* Div del producto */
-
-.productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    margin: 10px;
-}
-
-/* Div del medio */
-
-.middle { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.formulario {
-    grid-column: 2/3;
-    grid-row: 1/4;
-
-}
-
-.testimonio {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px;
-
-
-}
-
-.video {
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-}
-
-
 
 .topbanner {
     display: flex;
@@ -145,7 +99,7 @@ body {
 }
     
 #diapositiva img { 
-    width: 100vh;
+    width: 100vw;
     height: 300px;
     object-fit: cover;
 }
@@ -155,10 +109,67 @@ body {
     
 }
 
-.video {
-    text-align: center;
-    margin-bottom: 50px;
+
+/* Div del medio */
+
+.middle { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
 }
+
+    /* Div del producto */
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid black;
+        border-radius: 10px;
+        grid-row: 3/4;
+        margin: 5%;
+    }
+
+
+
+.formulario {
+    margin: 5%;
+    grid-row: 4/5;
+}
+
+    /* Div de los testimonios */
+
+    .testimonio {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 10px;
+        margin: 5%;
+        grid-row: 2/3;
+
+
+    }
+
+.video {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.video label {
+    color:  #4CAF50;
+    font: bold 20px sans-serif;
+    text-shadow:0 0 10px white;
+
+}
+
+.video iframe {
+    margin: auto;
+    width: 90vw; 
+    height: 60vh;
+
+}
+
 
 /* Botón para subir arriba */
 
@@ -177,3 +188,66 @@ body {
     padding: 0;
     object-fit: contain;
 }
+
+/* Vista de tablet */
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+   body{
+       background-color: blue;
+   }
+}
+
+
+/* Vista de escritorio */
+
+@media screen and (min-width: 769px) {
+    
+    /* Div del medio */
+
+.middle { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.formulario {
+    grid-column: 2/3;
+    grid-row: 2/5;
+
+}
+
+.testimonio {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+
+
+}
+
+.video {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.video iframe {
+    margin: auto;
+    width: 416px; 
+    height: 234px;
+
+}
+
+.productos {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+}
+
+
+
