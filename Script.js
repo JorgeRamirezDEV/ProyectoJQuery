@@ -8,3 +8,22 @@ setInterval(function() {
     .end()
     .appendTo('#diapositiva');
 },  5000);
+
+
+$(function () {
+  $(window).scroll(function() {
+      if ($(this).scrollTop() - 200 > 0) {
+          $('#gotopdiv').stop().slideDown('fast');
+      } else {
+          $('#gotopdiv').stop().slideUp('fast');
+      }
+  });
+});
+
+$(function () {
+  $("#gotopdiv").on("click", function () {
+      $("html, body").animate({
+          scrollTop: 0
+      }, 200);
+  });
+});

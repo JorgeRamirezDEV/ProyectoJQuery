@@ -157,10 +157,13 @@ body {
     margin-bottom: 50px;
 }
 
+/* Botón para subir arriba */
+
 #gotopdiv {
     position:fixed;
     right:0;
     bottom:0;
+    z-index: 99;
     cursor: pointer;
 }
 
