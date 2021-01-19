@@ -146,6 +146,7 @@ body {
     background-color: lightgrey;
     border-radius: 20px;
     box-shadow: 5px 5px 5px grey;
+    font: 15px sans-serif;
 }
 
 .informacion h2 {
@@ -221,6 +222,23 @@ body {
     padding: 0;
     object-fit: contain;
 }
+
+footer {
+    text-align: center;
+    color: grey;
+    background-color: lightgreen;
+    margin: 10px 10px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+footer label {
+    font: bold 20px sans-serif;
+
+}
+
+
 
 /* Vista de tablet */
 
