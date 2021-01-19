@@ -163,6 +163,7 @@ body {
 /* Botón para subir arriba */
 
 #gotopdiv {
+    display: flex;
     position:fixed;
     right:0;
     bottom:0;
@@ -171,6 +172,7 @@ body {
 }
 
 #gotopdiv img {
-    width: 15vw;
+    width: 16vw;
     padding: 0;
+    object-fit: contain;
 }
