@@ -131,7 +131,7 @@ function recogerProductos(){
       data: "data",
       success: function(response){
           for (let i=0; i<3; i++){
-              $("div#imagen"+i.toString()).prepend('<img id="imagen1" src="'+response.productos[i].imagen+'"/>');
+              $("div#producto"+i.toString()).prepend('<img id="imagen1" src="'+response.productos[i].imagen+'"/>');
           }
       }
   })
