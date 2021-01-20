@@ -14,16 +14,6 @@ input[type=text],input[type=email], select {
     margin-bottom: 16px;
 }
 
-input[type=date] {
-    width: 150px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-       
-}
 
 
 input[type=submit] {
@@ -187,10 +177,14 @@ body {
 }
 
 #precioProductos {
-    color:  grey;
+    color:  white;
     font: bold 20px sans-serif;
     order: 3;
     cursor: pointer;
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 20px;
+    
 }
 
 .informacion {
@@ -393,7 +387,7 @@ footer label {
 
 .testimonio {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/3;
     grid-row: 3/4;
     border: 1px solid black;
@@ -432,3 +426,4 @@ footer label {
 
 
 
+/* Pelo que rebota */

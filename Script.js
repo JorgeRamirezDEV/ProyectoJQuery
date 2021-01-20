@@ -107,20 +107,22 @@ $("input#edad").keydown(function(){
 // Mostrar testimonios
 
 function recogerTestimonios(){
-  let aleatorio = Math.floor(Math.random() * 6);
   $.ajax({
       dataType: "json",
       url: "testimonios.json",
       data: "data",
       success: function(response){
-          for (let i=1; i<=3; i++){
+          for (let i=0; i<3; i++){
               let aleatorio = Math.floor(Math.random() * 7);
-              $("div#testimonio"+i.toString()).text(response.testimonios[aleatorio].nombre);
+              $("label#nombre"+i.toString()).text(response.testimonios[aleatorio].nombre);
+              $("p#testimonio"+i.toString()).text(response.testimonios[aleatorio].texto);
           }
       }
   })
   setTimeout(recogerTestimonios, 10000);
 }
+
+recogerTestimonios(); 
 
 // Mostrar Productos
 
@@ -131,7 +133,7 @@ function mostrarProductos(){
       data: "data",
       success: function(response){
           for (let i=0; i<3; i++){
-              $("div#producto"+i.toString()).prepend('<img id="fotosproductos" src="'+response.productos[i].imagen+'"/>');
+              $("div#producto"+i.toString()).prepend('<img id="fotosproductos" src="'+response.productos[i].imagen+'" alt="'+response.productos[i].nombre+'"/>');
               $("div#producto"+i.toString()).prepend('<label id="nombreProductos">'+response.productos[i].nombre+'</label>');
               $("div#producto"+i.toString()).prepend('<label id="precioProductos">'+response.productos[i].precio+'</label>');
           }
