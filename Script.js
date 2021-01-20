@@ -12,30 +12,25 @@ setInterval(function() {
 },  5000);
 
 
+// Funcionalidad boton top
 
-
-// Esta es la lógica detrás del botón de volver al inicio de la página
-
-$(function () {
-  $("#gotopdiv").on("click", function () {
-      $("html, body").animate({
-          scrollTop: 0
-      }, 200);
-  });
+$(document).ready(function(){
+    
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#gotopdiv').fadeIn();
+        } else {
+            $('#gotopdiv').fadeOut();
+        }
+    });
+    
+    $('#gotopdiv').click(function(){
+        $('html, body').animate({scrollTop : 0},600);
+        return false;
+    });
+    
 });
 
-
-// Esta es la animación
-
-$(function () {
-  $(window).scroll(function() {
-      if ($(this).scrollTop() - 200 > 0) {
-          $('#gotopdiv').stop().slideDown('fast');
-      } else {
-          $('#gotopdiv').stop().slideUp('fast');
-      }
-  });
-});
 
 
 // Validar formulario
