@@ -1,0 +1,7 @@
+{
+    "productos": [
+        {"nombre": "naruto", "imagen": "naruto1.jpg"},  
+        {"nombre": "One punch man", "imagen": "onepunchman1.jpg"},
+        {"nombre": "Attack on titan", "imagen": "attackontitan.jpg"}
+    ]
+}

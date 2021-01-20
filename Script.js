@@ -102,3 +102,37 @@ $("input#edad").keydown(function(){
   }
 
 })
+
+
+// Mostrar testimonios
+
+function recogerTestimonios(){
+  let aleatorio = Math.floor(Math.random() * 6);
+  $.ajax({
+      dataType: "json",
+      url: "testimonios.json",
+      data: "data",
+      success: function(response){
+          for (let i=1; i<=3; i++){
+              let aleatorio = Math.floor(Math.random() * 7);
+              $("div#testimonio"+i.toString()).text(response.testimonios[aleatorio].nombre);
+          }
+      }
+  })
+  setTimeout(recogerTestimonios, 10000);
+}
+
+// Mostrar Productos
+
+function recogerProductos(){
+  $.ajax({
+      dataType: "json",
+      url: "productos.json",
+      data: "data",
+      success: function(response){
+          for (let i=0; i<3; i++){
+              $("div#imagen"+i.toString()).prepend('<img id="imagen1" src="'+response.productos[i].imagen+'"/>');
+          }
+      }
+  })
+}
