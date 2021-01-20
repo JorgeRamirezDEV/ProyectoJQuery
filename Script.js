@@ -124,15 +124,19 @@ function recogerTestimonios(){
 
 // Mostrar Productos
 
-function recogerProductos(){
+function mostrarProductos(){
   $.ajax({
       dataType: "json",
       url: "productos.json",
       data: "data",
       success: function(response){
           for (let i=0; i<3; i++){
-              $("div#producto"+i.toString()).prepend('<img id="imagen1" src="'+response.productos[i].imagen+'"/>');
+              $("div#producto"+i.toString()).prepend('<img id="fotosproductos" src="'+response.productos[i].imagen+'"/>');
+              $("div#producto"+i.toString()).prepend('<label id="nombreProductos">'+response.productos[i].nombre+'</label>');
+              $("div#producto"+i.toString()).prepend('<label id="precioProductos">'+response.productos[i].precio+'</label>');
           }
       }
   })
 }
+
+mostrarProductos();

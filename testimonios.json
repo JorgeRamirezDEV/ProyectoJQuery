@@ -1,10 +1,12 @@
 {
     "testimonios": [
-        {"nombre": "Juan", "texto": "La mejor web para ver anime en español"},  
-        {"nombre": "Pepe", "texto": "Tiene todos los animes que busco"},
-        {"nombre": "Jose", "texto": ""},
-        {"nombre": "Carlos", "texto": ""},
-        {"nombre": "Antonio", "texto": ""},
-        {"nombre": "Laura", "texto": ""}
+        {"nombre": "Torpes de Gama", "texto": "Un cambio sin precentes en la forma de interactuar con nuestros móviles"},  
+        {"nombre": "Badalona MWC", "texto": "Por fin una nueva forma de interactuar con nuestros smartphone"},
+        {"nombre": "Nacho", "texto": "Ojalá existiera"},
+        {"nombre": "Jorge", "texto": "Soy el que ha hecho la página, ¡HOLA!"},
+        {"nombre": "Andrés", "texto": "Yo no sé ni que es esto, no vengo a clase"},
+        {"nombre": "FORBES", "texto": "With any doubt, the best moment to invest in Nokia.inc"},
+        {"nombre": "Javi", "texto": "Más perricos"},
+        {"nombre": "Enrique", "texto": "Mi perro filipino se come un filipino"}
     ]
 }

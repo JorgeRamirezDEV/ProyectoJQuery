@@ -1,7 +1,7 @@
 {
     "productos": [
-        {"nombre": "naruto", "imagen": "naruto1.jpg"},  
-        {"nombre": "One punch man", "imagen": "onepunchman1.jpg"},
-        {"nombre": "Attack on titan", "imagen": "attackontitan.jpg"}
+        {"nombre": "Smartphone", "imagen": "img/foto0.jpg", "precio": "799$"},  
+        {"nombre": "SmartWatch", "imagen": "img/foto1.jpg", "precio": "599$"},
+        {"nombre": "Paquete completo", "imagen": "img/foto2.jpg", "precio": "1099$"}
     ]
 }
