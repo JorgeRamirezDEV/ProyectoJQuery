@@ -168,8 +168,8 @@ document.addEventListener('scroll', function (e) {
 });
 
 
-// Localización
+// Localización, la ciudad a veces falla
 
-$.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+$.getJSON('https://api.wipmania.com/jsonp?callback=?', function (data) {
   alert('País: ' + data.address.country);
 });
