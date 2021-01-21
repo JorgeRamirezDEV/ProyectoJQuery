@@ -108,9 +108,10 @@ function recogerTestimonios(){
       data: "data",
       success: function(response){
           for (let i=0; i<3; i++){
-              let aleatorio = Math.floor(Math.random() * 7);
-              $("label#nombre"+i.toString()).text(response.testimonios[aleatorio].nombre);
-              $("p#testimonio"+i.toString()).text(response.testimonios[aleatorio].texto);
+              let random = Math.floor(Math.random() * 7);
+              $("label#nombre"+i.toString()).text(response.testimonios[random].nombre);
+              $("p#testimonio"+i.toString()).text(response.testimonios[random].texto);
+              $("p#fecha"+i.toString()).text(response.testimonios[random].fecha);
           }
       }
   })
@@ -118,6 +119,8 @@ function recogerTestimonios(){
 }
 
 recogerTestimonios(); 
+
+
 
 // Mostrar Productos
 
@@ -137,6 +140,8 @@ function mostrarProductos(){
 }
 
 mostrarProductos();
+
+
 
 
 // animación aparecen productos y testimonios al hacer scroll
@@ -163,3 +168,8 @@ document.addEventListener('scroll', function (e) {
 });
 
 
+// Localización, la ciudad a veces falla
+
+$.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+  console.log(data.address.continent, data.address.country, data.address.city);
+});

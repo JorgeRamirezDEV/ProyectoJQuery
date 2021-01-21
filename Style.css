@@ -283,6 +283,20 @@ body {
 
 }
 
+.testimonio #fecha0 {
+    margin-top: 20px;
+    color: black;
+}
+
+.testimonio #fecha1 {
+    margin-top: 20px;
+    color: black;
+}
+
+.testimonio #fecha2 {
+    margin-top: 20px;
+    color: black;
+}
 
 .testimonio label {
     color: grey;
@@ -291,7 +305,7 @@ body {
 }
 
 .testimonio p {
-     margin: 0 5px;
+    margin: 0 5px;
     
 }
 
