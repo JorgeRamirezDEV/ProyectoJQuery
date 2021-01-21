@@ -35,6 +35,9 @@ body {
     background-color: rgb(253, 250, 235);
 }
 
+
+
+
 /* Estilo de navbar */
 
 .navbar { 
@@ -279,8 +282,27 @@ body {
     font: bold 20px sans-serif;
     text-shadow:0 0 10px white;
     background-color: white;
+    box-shadow: 5px 5px 5px lightgreen;
+    background-image: url(img/backgroundtestimonio.jpg) ;
 
+}
 
+#testimonio0 {
+    background-color: rgb(255,255,255, 0.7);
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+#testimonio1 {
+    background-color: rgb(255,255,255, 0.7);
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+#testimonio2 {
+    background-color: rgb(255,255,255, 0.7);
+    padding: 10px 0px;
+    border-radius: 20px;
 }
 
 .testimonio #fecha0 {
@@ -351,14 +373,18 @@ body {
     object-fit: contain;
 }
 
-footer {
+footer .footerinfo {
+    position: relative;
     text-align: center;
-    color: white;
-    background-color: #2BAE66FF;
-    margin: 10px 10px;
+    color: black;
+    font: 16px sans-serif;
+    margin: 0px 20%;
     margin-top: 100px;
-    border-radius: 20px;
-    padding: 5%;
+    z-index: 99;
+    background-color: rgba(232, 232, 232, 0.8);
+    border-radius: 10px;
+    padding: 2px 0px;
+    text-shadow:0 0 10px white;
 }
 
 footer label {
@@ -366,6 +392,17 @@ footer label {
 
 }
 
+.olas {
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+}
 
 
 /* Vista de tablet */
@@ -412,7 +449,8 @@ footer label {
     .productos {
         grid-row: 2/3;
         grid-column: 1/2;
-   }
+    }
+
 
    .formulario {
        grid-row: 3/4;
@@ -457,6 +495,9 @@ footer label {
 }
 
 .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     justify-self: center;
     max-width: 80%;
     width: 80%;
@@ -465,8 +506,8 @@ footer label {
 
 .testimonio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
@@ -501,7 +542,3 @@ footer label {
 }
 
 }
-
-
-
-/* Pelo que rebota */
