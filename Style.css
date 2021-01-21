@@ -67,6 +67,12 @@ body {
 
 }
 
+.navbar a {
+    color: white;
+    font: 16px sans-serif;
+    margin: auto;
+}
+
 
 .topbanner {
     display: flex;
