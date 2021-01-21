@@ -115,7 +115,7 @@ function recogerTestimonios(){
           }
       }
   })
-  setTimeout(recogerTestimonios, 5000);
+  setTimeout(recogerTestimonios, 10000);
 }
 
 recogerTestimonios(); 
