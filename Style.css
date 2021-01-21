@@ -127,6 +127,40 @@ body {
     
 }
 
+
+/* Animaciones de aparecer */
+
+#producto div {
+    opacity: 0;
+}
+
+@keyframes animation {
+    100% {
+      opacity: 1;
+    }
+}
+
+#producto.animate div {
+    animation: animation 3.5s forwards;
+}
+
+#testimonio div {
+    opacity: 0;
+}
+
+@keyframes animation {
+    100% {
+      opacity: 1;
+    }
+}
+
+#testimonio.animate div {
+    animation: animation 1.5s forwards;
+}
+
+
+
+
 #producto0 {
     display: flex;
     grid-row: 1/2;

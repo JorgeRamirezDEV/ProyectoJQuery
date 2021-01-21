@@ -114,7 +114,7 @@ function recogerTestimonios(){
           }
       }
   })
-  setTimeout(recogerTestimonios, 10000);
+  setTimeout(recogerTestimonios, 5000);
 }
 
 recogerTestimonios(); 
@@ -137,3 +137,29 @@ function mostrarProductos(){
 }
 
 mostrarProductos();
+
+
+// animación aparecen productos y testimonios
+
+
+document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#producto > div').offsetTop;
+         
+     if (isVisible) {
+       document.getElementById('producto').classList.add('animate');
+    }
+});
+
+
+
+document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#testimonio > div').offsetTop;
+         
+     if (isVisible) {
+       document.getElementById('testimonio').classList.add('animate');
+    }
+});
+
+
