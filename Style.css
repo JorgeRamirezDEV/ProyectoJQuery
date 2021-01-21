@@ -382,9 +382,8 @@ footer .footerinfo {
     text-align: center;
     color: black;
     font: 16px sans-serif;
-    margin: 100px 100px;
-    margin-top: 200px;
-    z-index: 99;
+    margin: 100px 50px;
+    z-index: 98;
     background-color: rgba(232, 232, 232, 0.8);
     border-radius: 10px;
     padding: 2px 0px;
@@ -418,6 +417,20 @@ svg {
    grid-template-columns: 1fr 1fr;
    grid-template-rows:  1fr 1fr 1fr 1fr;
    }
+
+   footer .footerinfo {
+    position: relative;
+    text-align: center;
+    color: black;
+    font: 16px sans-serif;
+    margin: 100px 100px;
+    margin-top: 200px;
+    z-index: 98;
+    background-color: rgba(232, 232, 232, 0.8);
+    border-radius: 10px;
+    padding: 2px 0px;
+    text-shadow:0 0 10px white;
+}
 
    .informacion {
        grid-row: 1/2;
@@ -477,6 +490,20 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr;
+}
+
+footer .footerinfo {
+    position: relative;
+    text-align: center;
+    color: black;
+    font: 16px sans-serif;
+    margin: 100px 5%;
+    margin-top: 200px;
+    z-index: 98;
+    background-color: rgba(232, 232, 232, 0.8);
+    border-radius: 10px;
+    padding: 2px 0px;
+    text-shadow:0 0 10px white;
 }
 
 .navbar a {
