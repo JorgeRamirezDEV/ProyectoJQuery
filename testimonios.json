@@ -6,7 +6,6 @@
         {"nombre": "Jorge", "texto": "Soy el que ha hecho la página, ¡HOLA!", "fecha": "24-02-1998"},
         {"nombre": "Andrés", "texto": "Yo no sé ni que es esto, no vengo a clase", "fecha": "15-06-2020"},
         {"nombre": "FORBES", "texto": "With any doubt, the best moment to invest in Nokia.inc", "fecha": "30-05-2020"},
-        {"nombre": "Diego", "texto": "Increíble, sin palabras me hallo.", "fecha": "11-02-2020"},
-        {"nombre": "Enrique", "texto": "Mi perro filipino se come un filipino", "fecha": "02-01-2020"}
+        {"nombre": "Diego", "texto": "Increíble, sin palabras me hallo.", "fecha": "11-02-2020"}
     ]
 }
