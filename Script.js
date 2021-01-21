@@ -139,7 +139,7 @@ function mostrarProductos(){
 mostrarProductos();
 
 
-// animación aparecen productos y testimonios
+// animación aparecen productos y testimonios al hacer scroll
 
 
 document.addEventListener('scroll', function (e) {
