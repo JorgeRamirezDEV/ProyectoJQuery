@@ -171,5 +171,5 @@ document.addEventListener('scroll', function (e) {
 // Localización, la ciudad a veces falla
 
 $.getJSON('https://api.wipmania.com/jsonp?callback=?', function (data) {
-  alert('País: ' + data.address.country);
+  console.log(data.address.continent, data.address.country, data.address.city);
 });
