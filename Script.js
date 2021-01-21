@@ -108,9 +108,10 @@ function recogerTestimonios(){
       data: "data",
       success: function(response){
           for (let i=0; i<3; i++){
-              let aleatorio = Math.floor(Math.random() * 7);
-              $("label#nombre"+i.toString()).text(response.testimonios[aleatorio].nombre);
-              $("p#testimonio"+i.toString()).text(response.testimonios[aleatorio].texto);
+              let random = Math.floor(Math.random() * 7);
+              $("label#nombre"+i.toString()).text(response.testimonios[random].nombre);
+              $("p#testimonio"+i.toString()).text(response.testimonios[random].texto);
+              $("p#fecha"+i.toString()).text(response.testimonios[random].fecha);
           }
       }
   })
@@ -118,6 +119,8 @@ function recogerTestimonios(){
 }
 
 recogerTestimonios(); 
+
+
 
 // Mostrar Productos
 
@@ -137,3 +140,36 @@ function mostrarProductos(){
 }
 
 mostrarProductos();
+
+
+
+
+// animación aparecen productos y testimonios al hacer scroll
+
+
+document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#producto > div').offsetTop;
+         
+     if (isVisible) {
+       document.getElementById('producto').classList.add('animate');
+    }
+});
+
+
+
+document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#testimonio > div').offsetTop;
+         
+     if (isVisible) {
+       document.getElementById('testimonio').classList.add('animate');
+    }
+});
+
+
+// Localización, la ciudad a veces falla
+
+$.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+  console.log(data.address.continent, data.address.country, data.address.city);
+});
