@@ -68,9 +68,7 @@ body {
 }
 
 .navbar a {
-    color: white;
-    font: 16px sans-serif;
-    margin: auto;
+    display: none;
 }
 
 
@@ -427,6 +425,10 @@ svg {
        margin: 10px;
    }
 
+   .navbar a {
+    display: none;
+    }
+
    #diapositiva {
     
     margin-bottom: 40vh ;
@@ -475,6 +477,13 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    font: 16px sans-serif;
+    margin: auto;
 }
 
 #diapositiva {
