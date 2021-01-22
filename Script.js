@@ -1,3 +1,5 @@
+
+
 // Esta es la función del banner de arriba
 
 $("#diapositiva > div:gt(0)").hide();
@@ -170,6 +172,24 @@ document.addEventListener('scroll', function (e) {
 
 // Localización, la ciudad a veces falla
 
-$.getJSON('https://api.wipmania.com/jsonp?callback=?', function (data) {
-  console.log(data.address.continent, data.address.country, data.address.city);
-});
+
+
+
+
+// // Cambiar vista de testimonios
+
+
+
+
+
+var lista = false;
+
+$( "#cambiarVista" ).click(function() {
+   lista=!lista;
+   if(lista){
+    $(".testimonio").css("display","flex");
+   }
+   else{ 
+    $(".testimonio").css("display","grid");
+   }
+ });
