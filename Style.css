@@ -132,7 +132,14 @@ body {
     background-image: url(img/backgroundproducto.jpg) ;
     background-size: cover;
     box-shadow: 5px 5px 5px rgb(75, 124, 75);
-    
+    transition: all .2s ease-in-out;
+
+
+}
+
+.productos:hover {
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 
@@ -171,6 +178,7 @@ body {
     align-items: center;
     cursor: pointer;
     border-bottom: 1px solid black ;
+
 }
 
 #producto1 {
@@ -181,7 +189,6 @@ body {
     align-items: center;
     cursor: pointer;
     border-bottom: 1px solid black ;
-    
     
 }
 
@@ -295,18 +302,39 @@ body {
     background-color: rgb(255,255,255, 0.7);
     padding: 10px 0px;
     border-radius: 20px;
+    transition: all .2s ease-in-out;
+
 }
 
 #testimonio1 {
     background-color: rgb(255,255,255, 0.7);
     padding: 10px 0px;
     border-radius: 20px;
+    transition: all .2s ease-in-out;
+
 }
 
 #testimonio2 {
     background-color: rgb(255,255,255, 0.7);
     padding: 10px 0px;
     border-radius: 20px;
+    transition: all .2s ease-in-out;
+
+}
+
+#testimonio0:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+#testimonio1:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+#testimonio2:hover {
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 .testimonio #fecha0 {
