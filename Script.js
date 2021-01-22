@@ -186,7 +186,7 @@ $.ajax({
   {
     console.log("Ciudad: " + json.city);
     console.log("Región: " +  json.regionName);
-    console.log( "País: " + json.country);
+    console.log("País: " + json.country);
   }
 });
 
