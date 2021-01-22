@@ -177,7 +177,7 @@ document.addEventListener('scroll', function (e) {
 
 // Localización, la ciudad a veces falla, al menos conmigo no es precisa
 
-var requestUrl = "http://ip-api.com/json";
+var requestUrl = "https://ip-api.com/json";
 
 $.ajax({
   url: requestUrl,
