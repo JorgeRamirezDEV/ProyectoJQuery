@@ -191,7 +191,7 @@ $.ajax({
 });
 
 
-// // Cambiar vista de testimonios
+// Cambiar vista de testimonios
 
 
 var lista = false;
