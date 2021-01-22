@@ -156,12 +156,6 @@ body {
     opacity: 0;
 }
 
-@keyframes animation {
-    100% {
-      opacity: 1;
-    }
-}
-
 #testimonio.animate div {
     animation: animation 1.5s forwards;
 }
@@ -274,7 +268,7 @@ body {
 
 /* Div de los testimonios */
 
-.testimonio {
+#testimonio {
     display: grid;
     flex-direction: row;
     text-align: center;
@@ -292,6 +286,10 @@ body {
 
 }
 
+.testimoniofila {
+    display: flex;
+    flex-direction: row;
+}
 
 #testimonio0 {
     background-color: rgb(255,255,255, 0.7);
@@ -477,7 +475,7 @@ svg {
 
    }
 
-    .testimonio {
+    #testimonio {
         grid-row: 3/4;
         grid-column: 2/3;
    }
@@ -571,7 +569,7 @@ footer .footerinfo {
     
 }
 
-.testimonio {
+#testimonio {
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
